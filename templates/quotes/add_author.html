@@ -8,7 +8,11 @@
         {{form.non_field_errors}}
     </div>
     {% endif %}
+
     <form action="{% url 'quotes:add_author' %}" method="post" enctype="multipart/form-data">
+
+    <form action="{% url 'quotes:add_author' %}" method="post" enctype="multipart/form-data" >
+
         {% csrf_token %}
         <div class="mb-3">
             <label for="fullname" class="form-label">Full Name</label>

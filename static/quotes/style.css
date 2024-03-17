@@ -66,3 +66,82 @@
     text-align: justify;
     margin-bottom: 20px;
 }
+
+body {
+    background: linear-gradient(to bottom right, #fcc5c5, #bdf4ff);
+}
+.footer, .header-top {
+    background-color: #cacbcc;
+    padding: 20px 0;
+}
+
+.header-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #cacbcc;
+    padding: 10px 0;
+    text-align: center;
+}
+.header-box {
+    margin-top: 60px; /* Adjust according to the height of the header top */
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #cacbcc;
+    padding: 10px 0;
+    text-align: center;
+}
+.content {
+    margin-top: 50px; /* Adjust according to the height of the Header Top */
+    margin-bottom: 50px; /* Adjust according to the height of the Footer */
+}
+
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0; /* Додано відступи зверху та знизу */
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .header-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Додайте стилі для мобільного меню тут */
+}
+
+/* Для малих пристроїв (наприклад, смартфонів) */
+@media only screen and (max-width: 480px) {
+    .button {
+        padding: 15px 20px; /* Змініть розмір відповідно до вашого дизайну */
+        font-size: 14px; /* Змініть розмір шрифту відповідно до вашого дизайну */
+    }
+}
+
+/* Для більших пристроїв (наприклад, планшетів) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .button {
+        padding: 10px 15px; /* Змініть розмір відповідно до вашого дизайну */
+        font-size: 12px; /* Змініть розмір шрифту відповідно до вашого дизайну */
+    }
+}
+
+
+
+}
+
+.container.content {
+    margin-top: 170px; /* Відступ зверху */
+}

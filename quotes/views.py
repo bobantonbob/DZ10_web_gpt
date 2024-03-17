@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
 from django.core.paginator import Paginator
 from .forms import AuthorForm, QuoteForm
-from .models import Author
-from .models import Quote  # Підключаємо модель для роботи з базою даних SQLite
+from .models import Author, Tag, Quote
+ # Підключаємо модель для роботи з базою даних SQLite
 
 
 def main(request, page=1):
@@ -65,7 +65,15 @@ def add_quote(request):
     return render(request, 'quotes/add_quote.html', {'form': form})
 
 
+def tag_quotes(request, tag_name):
+    tag = Tag.objects.get(name=tag_name)
+    quotes_with_tag = Quote.objects.filter(tags__name=tag_name)
 
+    context = {
+        'tag': tag,
+        'quotes': quotes_with_tag,
+    }
+    return render(request, 'quotes/tag_quotes.html', context)
 
 
 # def add_quote(request):
