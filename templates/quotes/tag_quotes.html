@@ -1,0 +1,24 @@
+{% extends '_layouts/base.html' %}
+
+{% block content %}
+<div class="container">
+  <h2>Цитати з тегом "{{ tag.name }}"</h2>
+  <hr>
+  {% for quote in quotes %}
+  <div class="card mb-3" style="background-color: rgba(255, 255, 255, 0.1);">
+    <div class="card-body">
+      <h5 class="card-title">{{ quote.quote }}</h5>
+      <p class="card-text">Автор: {{ quote.author.fullname }}</p>
+      <p class="card-text">Дата створення: {{ quote.created_at }}</p>
+      <p class="card-text">Теги:
+        {% for tag in quote.tags.all %}
+        <span class="badge bg-primary">{{ tag.name }}</span>
+        {% endfor %}
+      </p>
+    </div>
+  </div>
+  {% empty %}
+  <p>Немає цитат з цим тегом.</p>
+  {% endfor %}
+</div>
+{% endblock %}
