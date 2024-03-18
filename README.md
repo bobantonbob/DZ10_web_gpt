@@ -1,18 +1,37 @@
-Домашнє завдання #10
-У минулій домашній роботі ви виконували скрапінг сайту http://quotes.toscrape.com.
-Вам необхідно самостійно реалізувати аналог такого сайту на Django.
+# Django Quotes Website
 
-Реалізуйте можливість реєстрації на сайті та вхід на сайт.
-Можливість додавання нового автора на сайт лише для зареєстрованого користувача.
-Можливість додавання нової цитати на сайт із зазначенням автора тільки для зареєстрованого користувача.
-Виконайте міграцію бази даних із MongoDB, яка у вас є, у Postgres для вашого сайту. Можна реалізувати кастомним скриптом. (За бажанням можете залишити та працювати з цитатами та авторами в MongoDB, а з користувачами у Postgres)
-Можна зайти на сторінку кожного автора без автентифікації користувача
-Усі цитати доступні для перегляду без автентифікації користувача
+This project implements a website similar to http://quotes.toscrape.com using Django, PostgreSQL, Docker, and MongoDB.
 
-Додаткова частина
-​
+## Homework Assignment Description
+In this assignment, you are tasked with creating a Django website that mimics the functionality of http://quotes.toscrape.com. Additionally, you are required to implement user registration, login, and the ability for registered users to add authors and quotes to the site. Furthermore, you need to migrate the MongoDB database to PostgreSQL and implement various features like tag-based search, displaying popular tags, pagination, and data scraping directly into the website's database.
 
-Реалізуйте пошук цитат за тегами. При натисканні на тег, виводиться список цитат з цим тегом.
-Реалізуйте блок "Top Ten tags" та виведення найпопулярніших тегів.
-Реалізуйте пагінацію. Це кнопки next та previous
-Замість перенесення даних з бази даних MongoDB, реалізуйте можливість скрапінгу даних прямо з вашого сайту по натисканню певної кнопки на формі та наповнення бази даних сайту.
+## Features
+- User registration and login.
+- Ability for registered users to add authors and quotes.
+- Migration of MongoDB database to PostgreSQL.
+- Access to each author's page without authentication.
+- Viewing all quotes without authentication.
+- Search functionality for quotes by tags.
+- Displaying the top ten tags.
+- Pagination for quotes.
+- Data scraping functionality.
+
+## Setup Instructions
+1. Clone the repository: `git clone <repository_url>`
+2. Navigate to the project directory: `cd django-quotes-website`
+3. Install dependencies: `pip install -r requirements.txt`
+4. Set up Docker containers for PostgreSQL and MongoDB.
+5. Run migrations: `python manage.py migrate`
+6. Start the Django development server: `python manage.py runserver`
+
+## Usage
+1. Visit the site and register/login.
+2. Explore the available quotes and authors.
+3. Add new authors and quotes if registered.
+4. Utilize search functionality by tags.
+5. View the top ten tags and navigate through pagination.
+6. Scrape data by clicking the specified button.
+
+## Contributors
+- Babenko Anton https://github.com/bobantonbob/DZ10_web_gpt.git
+
