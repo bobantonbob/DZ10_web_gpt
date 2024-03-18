@@ -1,3 +1,5 @@
+## GoIT, Python WEB, Homework number 10 - Django, PostgreSQL, Docker, MongoDB
+
 # Django Quotes Website
 
 This project implements a website similar to http://quotes.toscrape.com using Django, PostgreSQL, Docker, and MongoDB.
