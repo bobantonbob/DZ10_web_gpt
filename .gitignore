@@ -1,5 +1,44 @@
-.idea
+#Virtual environment:
+venv/
+env/
+
+#Кеші та файли збереження:
+*.pyc
+*.pyo
+__pycache__/
+db.sqlite3
+
+
+#Логи та файли звітів про помилки:
+logs/
+*.log
+
+
+#Файли налаштувань для розробки:
 .env
+local_settings.py
+
+#Конфігураційні файли IDE або редактора:
+.idea/
+.vscode/
+.idea
 .idea/*
+
+
+#Файли налаштувань сервера:
+.DS_Store
+.vscode/
+.vscode/*
+
+
+#Інші тимчасові файли:
+.coverage
+.pytest_cache/
+.tox/
+
+
 .xml
 .rar
+*.pid
+*.seed
+*.pid.lock
