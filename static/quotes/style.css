@@ -33,6 +33,7 @@
 .pager {
     font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
 .pager {
     padding-left: 0;
     margin: 22px 0;
@@ -116,32 +117,29 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    .header-container {
-        padding-left: 0;
-        padding-right: 0;
+    .header-top,
+    .footer {
+        padding: 9px 0; /* Зменшуємо висоту */
     }
-    /* Додайте стилі для мобільного меню тут */
+}
+    .header-container {
+        padding-top: 30px; /* Встановлюємо відступ зверху, щоб уникнути налазіння */
+    }
+    .header-top, .footer, .header-container, .header-box, .btn {
+        font-size: 12px; /* Зменшуємо розмір шрифту */
+    }
 }
 
-/* Для малих пристроїв (наприклад, смартфонів) */
-@media only screen and (max-width: 480px) {
-    .button {
-        padding: 15px 20px; /* Змініть розмір відповідно до вашого дизайну */
-        font-size: 14px; /* Змініть розмір шрифту відповідно до вашого дизайну */
-    }
-}
 
 /* Для більших пристроїв (наприклад, планшетів) */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .button {
         padding: 10px 15px; /* Змініть розмір відповідно до вашого дизайну */
-        font-size: 12px; /* Змініть розмір шрифту відповідно до вашого дизайну */
+        font-size: 16px; /* Змініть розмір шрифту відповідно до вашого дизайну */
     }
 }
 
 
-
-}
 
 .container.content {
     margin-top: 170px; /* Відступ зверху */
