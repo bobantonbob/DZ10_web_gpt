@@ -33,7 +33,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG')
 
 # ALLOWED_HOSTS = ['quotes-antonbabenko.koyeb.app']
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['quotes-antonbabenko.koyeb.app']
 
 # Application definition
 
