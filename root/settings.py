@@ -98,7 +98,7 @@ DATABASES = {
         'USER': env('USER_DB'),
         'PASSWORD': env('PASSWORD'),
         'HOST': env('HOST'),
-        'PORT': env('PORT'),
+        'PORT': env('PORT_DB'),
 
         # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
         # 'NAME': 'dz10_web_gpt',
